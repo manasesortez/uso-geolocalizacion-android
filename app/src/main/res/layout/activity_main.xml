@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#fff"
+		tools:context=".MainActivity">
+
+	<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/black" tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+			app:layout_constraintEnd_toEndOf="parent"
+
+			android:textSize="25dp"
+			android:text="Obtener ubicacion del Usuario "
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.022"
+			android:id="@+id/textView" android:layout_marginEnd="32dp"/>
+
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnUbicacion"
+			tools:ignore="HardcodedText,MissingConstraints"
+			android:text="Obtener Coordenadas" app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.497"
+			app:layout_constraintVertical_bias="0.086"/>
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/sendUbication"
+			android:clickable="true"
+			tools:ignore="HardcodedText,KeyboardInaccessibleWidget,MissingConstraints"
+			android:text="Compartir Ubicacion"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintVertical_bias="0.193"/>
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/btnMaps"
+			tools:ignore="HardcodedText,MissingConstraints"
+			android:text="Ver Ubicacion Actual"
+
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.47"
+			app:layout_constraintVertical_bias="0.872"/>
+	<TextView
+			android:layout_width="118dp"
+			android:layout_height="39dp"
+			android:text="Latitud"
+			android:textSize="30dp"
+			android:textColor="@color/black" tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.525"
+			app:layout_constraintVertical_bias="0.313"/>
+	<TextView
+			android:layout_width="127dp"
+			android:layout_height="46dp"
+			android:text="Longitud"
+			android:textColor="@color/black"
+			android:textSize="30dp"
+			tools:ignore="HardcodedText,MissingConstraints,SpUsage" app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.528"
+			app:layout_constraintVertical_bias="0.454"/>
+	<TextView
+			android:layout_width="118dp"
+			android:layout_height="39dp"
+			android:text="000000"
+			android:textSize="30dp"
+			android:id="@+id/tvLatitud"
+			android:textColor="#136"
+			tools:ignore="HardcodedText,MissingConstraints,SpUsage" app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.525"
+			app:layout_constraintVertical_bias="0.382"/>
+	<TextView
+			android:layout_width="419dp"
+			android:layout_height="88dp"
+			android:text="00000"
+			android:id="@+id/tvDireccion"
+			android:textSize="30dp"
+			android:textColor="#136"
+			android:textAlignment="center"
+			tools:ignore="HardcodedText,MissingConstraints,SpUsage" app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintVertical_bias="0.704" app:layout_constraintHorizontal_bias="0.375"/>
+	<TextView
+			android:layout_width="118dp"
+			android:layout_height="39dp"
+			android:text="000000"
+			android:textSize="30dp"
+			android:textColor="#136"
+			android:id="@+id/tvLongitud"
+			tools:ignore="HardcodedText,MissingConstraints,SpUsage" app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.525"
+			app:layout_constraintVertical_bias="0.52"/>
+	<TextView
+			android:textColor="@color/black" tools:ignore="HardcodedText,MissingConstraints,SpUsage"
+			app:layout_constraintEnd_toEndOf="parent"
+			android:layout_width="157dp"
+			android:layout_height="36dp"
+			android:text="Direccion"
+			android:textSize="30dp"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.606"
+			app:layout_constraintVertical_bias="0.585"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
